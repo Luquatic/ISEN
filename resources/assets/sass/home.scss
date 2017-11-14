@@ -1,0 +1,23 @@
+@font-face {
+  font-family: Raleway;
+  src: url('../../../public/fonts/Raleway-Regular.ttf');
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  background: white;
+  font-family: Raleway;
+  color: #333;
+  overflow-x: hidden;
+}
+
+::-webkit-input-placeholder {
+  color: #E0E0E0;
+  font-weight: normal;
+}
