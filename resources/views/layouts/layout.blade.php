@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aid.</title>
+    <title>Kempenaer</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -22,9 +22,6 @@
 <![endif]-->
 <div class="loginBox">
     <h1>Welkom</h1>
-
-    <img src="/images/login-background">
-
     @yield ('content')
 </div>
 
