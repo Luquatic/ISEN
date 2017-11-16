@@ -11,7 +11,10 @@
 }
 
 body {
-    background-image: url('../../../public/images/login-background.jpg');
+    background: url('../../../public/images/login-background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     font-family: Raleway;
     color: #333;
     overflow-x: hidden;
@@ -24,7 +27,7 @@ body {
 
 .loginBox {
     position: absolute;
-    top: 20%;
+    top: 25%;
     text-align: center;
     width: 100%;
     font-size: 18px;
@@ -33,7 +36,12 @@ body {
         line-height: 1;
         letter-spacing: 1px;
         color: white;
-        margin-bottom: 0;
+        margin-bottom: 120px;
+        text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
     }
     img {
         width: 18%;
@@ -41,20 +49,28 @@ body {
         bottom: 50px;
         z-index: -1;
     }
-    input[type="text"], input[type="password"] {
-        height: 30px;
-        width: 300px;
+    .u-p-box {
+        background-color: white;
+        width: 400px;
+        height: 330px;
+        padding-top: 80px;
         text-align: center;
-        color: white;
+        margin: auto;
+        border: solid black 2px;
+    }
+    input[type="text"], input[type="password"] {
+        height: 35px;
+        width: 250px;
+        text-align: center;
+        color: black;
         margin-bottom: 10px;
-        border: none;
-        border-bottom: white solid 1px;
+        border: black solid 1px;
         background: inherit;
         font-size: 18px;
         font-weight: bold;
     }
     input[type="text"]:focus, input[type="password"]:focus {
-        color: white;
+        color: black;
         font-weight: bold;
         outline: none;
     }
@@ -66,17 +82,16 @@ body {
         text-decoration: none;
         position: relative;
         top: 30px;
-        padding: 10px 20px;
+        padding: 15px 90px;
         color: white;
         font-weight: bold;
         border: 2.5px solid white;
         border-radius: 5px;
-        background-color: #4A8AA4;
+        background-color: forestgreen;
         transition-duration: 0.4s;
     }
     .btn:hover {
-        background-color: white;
-        color: #4A8AA4;
+        background-color: darkgreen;
     }
 }
 
