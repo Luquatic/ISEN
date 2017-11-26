@@ -13,14 +13,14 @@ class loginController extends Controller
     }
 
     public function store() {
-        if (! auth()->attempt(request(['klant_id', 'password']))) {
+        if (! auth()->attempt(request(['username', 'password']))) {
             return back()->withErrors([
-                'message' => 'Verkeerde klantnummer en/of code'
+                'message' => 'Incorrect username and/or password'
             ]);
         }
 
         $user = Auth::user();
-        if($user->klant_id == 0) {
+        if($user->id == 0) {
             return redirect('/register');
         }
 
