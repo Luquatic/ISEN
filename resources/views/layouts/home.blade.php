@@ -50,7 +50,7 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href=/css/home.css>
     <!-- endbuild -->
-    
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 </head>

@@ -108,6 +108,10 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+    body {
+        background: url('../../../public/images/login-background.jpg');
+    }
+
     .loginBox {
         left: 0;
         img {
