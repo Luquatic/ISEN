@@ -9,7 +9,7 @@ class loginController extends Controller
 {
 
     public function create() {
-        return view('auth.login');
+        return view('layouts.home');
     }
 
     public function store() {
