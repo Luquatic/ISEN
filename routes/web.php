@@ -18,8 +18,5 @@ Route::post('/', 'loginController@store');
 
 Route::get('/logout', 'loginController@destroy');
 
-Route::get('/register', 'RegistrationController@create');
-Route::post('/register', 'RegistrationController@store');
-
 Route::get('/home', 'HomeController@create');
 Route::get('/home/user', 'HomeController@getUser');

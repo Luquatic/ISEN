@@ -27,7 +27,7 @@ class LoginController extends Controller
      */
 
     public function username() {
-        return 'klant_id';
+        return 'username';
     }
 
     protected $redirectTo = '/home';

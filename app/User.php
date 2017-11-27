@@ -19,7 +19,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'user_id', 'voornaam', 'achternaam', 'password',
+        'id', 'username', 'password',
     ];
 
     //Hash the password
