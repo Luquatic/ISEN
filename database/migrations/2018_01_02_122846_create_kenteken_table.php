@@ -15,7 +15,7 @@ class CreateKentekenTable extends Migration
     {
         Schema::create('kenteken', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('in/out');
+            $table->string('kenteken');
             $table->timestamps();
             $table->rememberToken();
         });
