@@ -17,7 +17,6 @@ class CreateKentekenTable extends Migration
             $table->increments('id');
             $table->string('kenteken');
             $table->timestamps();
-            $table->rememberToken();
         });
     }
 
