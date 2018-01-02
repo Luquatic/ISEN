@@ -16,7 +16,7 @@ class CreateInoutTable extends Migration
         Schema::create('inout', function (Blueprint $table) {
             $table->increments('id');
             $table->string('in_out');
-            $table->dateTime('added_on');
+            $table->timestamps();
         });
     }
 
