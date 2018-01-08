@@ -59,11 +59,12 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div class="col-sm-8 col-sm-offset-2">
-    @foreach ($kentekens as $kenteken)
-        <li>{{ $kenteken }}</li>
-    @endforeach
-</div>
+<h1>Alle kentekens</h1>
+
+@foreach ($kenteken as $kentekens)
+    <li>{{ $kenteken }}</li>
+@endforeach
+
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
