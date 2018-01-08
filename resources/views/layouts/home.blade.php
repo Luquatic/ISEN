@@ -59,7 +59,7 @@
 <![endif]-->
 
 <div class="container">
-    <h1>Alle kentekens</h1>
+    <h1 style="padding-left: 2%;">Alle kentekens</h1>
 
     <ul>
         @foreach ($kenteken as $kentekens)
