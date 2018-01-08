@@ -62,8 +62,8 @@
     <h1 style="padding-left: 2%;">Alle kentekens</h1>
 
     <ul>
-        @foreach ($kenteken as $kentekens)
-            {{ $kentekens }}
+        @foreach ($kentekens as $kenteken)
+            {{ $kenteken }}
         @endforeach
     </ul>
 </div>
