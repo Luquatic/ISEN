@@ -12,6 +12,6 @@ class KentekenController extends Controller
     public function create() {
         $kentekens = Kenteken::all();
 
-        return view('kentekens.create', compact('kentekens'));
+        return view('kenteken.create', compact('kentekens'));
     }
 }
