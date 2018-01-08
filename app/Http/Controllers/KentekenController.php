@@ -10,8 +10,8 @@ use App\Http\Controllers\Controller;
 class KentekenController extends Controller
 {
     public function create() {
-        $kentekens = DB::table('kenteken')->all();
+        $kentekens = Kenteken::all();
 
-        return $kentekens;
+        return view('kentekens.create', compact('kentekens'));
     }
 }
