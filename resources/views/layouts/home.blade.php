@@ -59,10 +59,11 @@
 <![endif]-->
 
 <h1>Alle kentekens</h1>
-
+<ul>
 @foreach ($kenteken as $kentekens)
+    <li>{{ $kenteken }}</li>
 @endforeach
-
+</ul>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
