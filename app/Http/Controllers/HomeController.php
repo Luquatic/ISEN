@@ -13,7 +13,7 @@ class HomeController extends Controller
     }
 
     public function create() {
-        return view('layouts.home');
+        return view('layouts.dashboard');
     }
 
     public function getUser() {
