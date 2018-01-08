@@ -21,4 +21,4 @@ Route::get('/logout', 'loginController@destroy');
 Route::get('/home', 'HomeController@create');
 Route::get('/home/user', 'HomeController@getUser');
 
-Route::get('/kentekens', 'KentekenController@index');
+Route::get('/kentekens', 'KentekensController@index');

@@ -6,11 +6,11 @@ use Illuminate\Http\Request;
 use App\Kenteken;
 use App\Http\Requests;
 
-class KentekenController extends Controller
+class KentekensController extends Controller
 {
     public function index() {
-        $kenteken = Kenteken::all();
+        $kentekens = Kenteken::all();
 
-        return view('layouts.home', compact('kenteken'));
+        return view('kentekens.index', compact('kentekens'));
     }
 }
