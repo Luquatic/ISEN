@@ -62,7 +62,7 @@
 
 <ul>
 @foreach ($kenteken as $kentekens)
-    <li>{{ $kentekens }}</li>
+    {{ $kentekens }}
 @endforeach
 </ul>
 
