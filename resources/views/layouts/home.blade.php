@@ -60,7 +60,9 @@
 <![endif]-->
 
 <div class="col-sm-8 col-sm-offset-2">
-    
+    @foreach ($kentekens as $kenteken)
+        <li>{{ $kenteken }}</li>
+    @endforeach
 </div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
