@@ -11,6 +11,6 @@ class KentekensController extends Controller
     public function index() {
         $kentekens = Kenteken::all();
 
-        return view('layouts.home', compact('kentekens'));
+        return view('layouts.kenteken', compact('kentekens'));
     }
 }
