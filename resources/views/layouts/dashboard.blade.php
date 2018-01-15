@@ -59,14 +59,14 @@
 
         function drawTable() {
             var data = new google.visualization.DataTable();
-            data.addColumn('string', 'Name');
-            data.addColumn('number', 'Salary');
-            data.addColumn('boolean', 'Full Time Employee');
+            data.addColumn('string', 'Kenteken');
+            data.addColumn('string', 'First seen');
+            data.addColumn('string', 'Last seen');
             data.addRows([
-                ['Mike',  {v: 10000, f: '$10,000'}, true],
-                ['Jim',   {v:8000,   f: '$8,000'},  false],
-                ['Alice', {v: 12500, f: '$12,500'}, true],
-                ['Bob',   {v: 7000,  f: '$7,000'},  true]
+                ['92HXK9', 'today', 'today'],
+                ['92HXK9', 'today', 'today'],
+                ['92HXK9', 'today', 'today'],
+                ['92HXK9', 'today', 'today']
             ]);
 
             var table = new google.visualization.Table(document.getElementById('table_div'));
@@ -98,7 +98,7 @@
     </div>
 </div>
 
-<div id="table_div"></div>
+<div id="table_div" style="width: 90%; margin-left: 11%"></div>
 
 <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/dashboard/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color-text--white">View Source</a>
 <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
