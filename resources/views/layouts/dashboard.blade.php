@@ -71,7 +71,7 @@
 
             var table = new google.visualization.Table(document.getElementById('table_div'));
 
-            table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+            table.draw(data, {showRowNumber: true, height: '100%'});
         }
     </script>
 </head>
@@ -89,6 +89,7 @@
     <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
         <header class="demo-drawer-header">
             <img src="/images/JesseyCircle.png" class="demo-avatar">
+            <br>
             <div class="demo-avatar-dropdown">
                 <span>Jessey Fransen</span>
                 <div class="mdl-layout-spacer"></div>
