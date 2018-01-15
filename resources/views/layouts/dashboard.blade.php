@@ -65,7 +65,6 @@
             data.addRows([
                 ['92HXK9', 'today', 'today'],
                 ['92HXK9', 'today', 'today'],
-                ['92HXK9', 'today', 'today'],
                 ['92HXK9', 'today', 'today']
             ]);
 
@@ -98,10 +97,10 @@
     </div>
 </div>
 
-<div id="table_div" style="width: 89%; margin-left: 11%"></div>
+<div id="table_div"></div>
 
-<a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/dashboard/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color-text--white">View Source</a>
-<script src="https://github.com/Luquatic"></script>
+<a href="https://github.com/Luquatic" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color-text--white">View Source</a>
+<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
