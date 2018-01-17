@@ -14,15 +14,14 @@ class HomeController extends Controller
     }
 
     public function create() {
-        return view('layouts.dashboard');
+        $kentekens = Kenteken::latest()
+            ->get();
+
+        return view('layouts.dashboard', compact('kentekens'));
     }
 
     public function getUser() {
         $user = Auth::user();
         return $user->username;
-    }
-
-    public function getKenteken() {
-        $kentekens = Kenteken::all();
     }
 }
