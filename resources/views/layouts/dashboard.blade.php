@@ -60,9 +60,9 @@
 <div class="info-block">
     <br>
     <h2>Totaal aantal auto's:</h2>
-    <h1>0</h1>
-    <h2>Waarvan te lang geparkeerd:</h2>
     <h1>{{ \App\Kenteken::count() }}</h1>
+    <h2>Waarvan te lang geparkeerd:</h2>
+    <h1>0</h1>
 </div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
