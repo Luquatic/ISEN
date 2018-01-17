@@ -51,6 +51,10 @@
     <h1>0</h1>
     <h2>Waarvan te lang geparkeerd:</h2>
     <h1>0</h1>
+    <h2>Voor het eerst gezien op:</h2>
+    <h1>Tijd</h1>
+    <h2>Kenteken:</h2>
+    <h1>6-SNX-42</h1>
 </div>
 <div class="info-block">
     <br>
