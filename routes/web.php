@@ -22,3 +22,4 @@ Route::get('/home', 'HomeController@create');
 Route::get('/home/user', 'HomeController@getUser');
 
 Route::get('/kentekens', 'KentekensController@index');
+Route::get('/kentekens', 'KentekenController@index');
