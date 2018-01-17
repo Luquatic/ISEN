@@ -61,25 +61,9 @@
 {{--<app></app>--}}
 {{--</div>--}}
 
-<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-    <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
-        <header class="demo-drawer-header">
-            <img src="/images/JesseyCircle.png" class="demo-avatar">
-            <br>
-            <div class="demo-avatar-dropdown">
-                <span>Jessey Fransen</span>
-                <div class="mdl-layout-spacer"></div>
-            </div>
-        </header>
-    </div>
-</div>
-
 <div class="info-block">
     <h2>Test</h2>
 </div>
-
-<a href="https://github.com/Luquatic" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color-text--white">View Source</a>
-<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
