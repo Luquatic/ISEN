@@ -62,7 +62,8 @@
 {{--</div>--}}
 
 <div class="info-block">
-    <h2>Test</h2>
+    <br>
+    <h2>Aantal vrachtwagens te lang geparkeerd:</h2>
 </div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
