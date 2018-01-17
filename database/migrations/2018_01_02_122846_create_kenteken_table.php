@@ -15,7 +15,7 @@ class CreateKentekenTable extends Migration
     {
         Schema::create('kenteken', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('kenteken');
+            $table->string('kenteken')->unique();
             $table->timestamp('created_at')->default(\DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(\DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
