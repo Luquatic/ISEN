@@ -54,7 +54,7 @@
 <div class="info-block">
     <br>
     <h2>Totaal aantal kentekens vandaag gescanned:</h2>
-    <h1>{{ $countKentekens }}</h1>
+    {{--<h1>{{ $countKentekens }}</h1>--}}
     <h2>Auto's die langer als 2 uur in de straat zijn:</h2>
     <h1>0</h1>
 </div>
