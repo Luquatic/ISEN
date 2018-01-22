@@ -20,6 +20,14 @@ class HomeController extends Controller
         return view('layouts.dashboard', compact('kentekens'));
     }
 
+    public function countKenteken() {
+        $kentekens = Kenteken::latest()
+            ->count()
+            ->get();
+
+        return $kentekens;
+    }
+
     public function getUser() {
         $user = Auth::user();
         return $user->username;
