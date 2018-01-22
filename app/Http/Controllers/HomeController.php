@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use App\Kenteken;
+use Carbon\Carbon;
 
 
 class HomeController extends Controller
