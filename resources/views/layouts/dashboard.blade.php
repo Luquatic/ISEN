@@ -47,7 +47,8 @@
 
 <div class="info-block">
     <h2>Aantal vrachtwagens vandaag gezien:</h2>
-    <h1>{{ $kentekens->where('created_at', '>=', Carbon::today()->count()) }}</h1>
+    {{--<h1>{{ $kentekens->where('created_at', '>=', Carbon::today()) }}</h1>--}}
+    <h1>{{ $count= Kenteken::where('created_at', '>=', Carbon::today()->count()) }}</h1>
     <h2>Waarvan te lang geparkeerd:</h2>
     <h1>0</h1>
     <h2>Voor het eerst gezien op:</h2>
