@@ -47,7 +47,8 @@
 
 <div class="info-block">
     <h2>Aantal vrachtwagens vandaag gezien:</h2>
-    <h1>{{ $kentekens->whereDate('created_at', '>=', date('Y-m-d')) }}</h1>
+    {{--<h1>{{ $kentekens->whereDate('created_at', '>=', date('Y-m-d')) }}</h1>--}}
+    <h1>test</h1>
     <h2>Waarvan te lang geparkeerd:</h2>
     <h1>0</h1>
     <h2>Voor het eerst gezien op:</h2>
