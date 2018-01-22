@@ -24,8 +24,7 @@ class HomeController extends Controller
     public function countKenteken() {
         $countKentekens = Kenteken::latest()
             ->where('created_at', '>=', Carbon::today())
-            ->count()
-            ->get();
+            ->count();
         return $countKentekens;
     }
 
