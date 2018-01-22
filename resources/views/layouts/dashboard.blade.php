@@ -46,8 +46,8 @@
 {{--</div>--}}
 
 <div class="info-block">
-    <h2>Aantal vrachtwagens:</h2>
-    <h1>{{ $kentekens->count()->where($kenteken, 'LIKE', $B.'%') }}</h1>
+    <h2>Aantal vrachtwagens vandaag gezien:</h2>
+    <h1>{{ $kentekens->count()->whereDate('created_at', '>=', date('Y-m-d')) }}</h1>
     <h2>Waarvan te lang geparkeerd:</h2>
     <h1>0</h1>
     <h2>Voor het eerst gezien op:</h2>
