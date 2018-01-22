@@ -21,6 +21,14 @@ class HomeController extends Controller
         return view('layouts.dashboard', compact('kentekens'));
     }
 
+    public function countKenteken() {
+        $countKentekens = Kenteken::latest()
+            ->where('created_at', '>=', Carbon::today())
+            ->count()
+            ->get();
+        return $countKentekens;
+    }
+
     public function getUser() {
         $user = Auth::user();
         return $user->username;
