@@ -47,7 +47,7 @@
 
 <div class="info-block">
     <h2>Aantal vrachtwagens vandaag gezien:</h2>
-    <h1>{{ $kentekensVrachtwagen }}</h1>
+    <h1>{{ $kentekens->where('kenteken', 'LIKE', 'B%')->count() }}</h1>
     <h2>Waarvan te lang geparkeerd:</h2>
     <h1>0</h1>
 </div>
@@ -56,7 +56,7 @@
     <h2>Totaal aantal kentekens vandaag gescanned:</h2>
     <h1>{{ $kentekens->count() }}</h1>
     <h2>Auto's die langer als 2 uur in de straat zijn:</h2>
-    <h1>0</h1>
+    <h1>{{ $teLang }}</h1>
 </div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

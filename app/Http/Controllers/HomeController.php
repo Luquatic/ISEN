@@ -19,11 +19,9 @@ class HomeController extends Controller
             ->where('created_at', '>=', Carbon::today())
             ->get();
 
-        $kentekensVrachtwagen = $kentekens->filter(function($value, $key) {
-            return strpos($value, 'B') === 0;
-        });
+        $teLang = $kentekens->where('updated_at', '>', Carbon::now()->subHours(2));
 
-        return view('layouts.dashboard', compact('kentekens', 'kentekensVrachtwagen'));
+        return view('layouts.dashboard', compact('kentekens', 'teLang'));
     }
 
     public function getUser() {
