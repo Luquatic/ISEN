@@ -19,8 +19,9 @@ class HomeController extends Controller
             ->where('created_at', '>=', Carbon::today())
             ->get();
 
-        $cr = Carbon::create($kentekens->created_at);
-        $teLang = $kentekens->where('updated_at', '>', $cr->addHours(2));
+        $teLang = $kentekens->filter(function($i) {
+            return $i->updated_at->gt($i->created_at->subHours(2));
+        });
 
         return view('layouts.dashboard', compact('kentekens', 'teLang'));
     }
