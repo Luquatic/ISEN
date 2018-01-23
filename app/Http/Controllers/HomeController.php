@@ -19,7 +19,9 @@ class HomeController extends Controller
             ->where('created_at', '>=', Carbon::today())
             ->get();
 
-        $kentekensVrachtwagen = $kentekens->where('kenteken', 'LIKE', 'B%');
+        $kentekensVrachtwagen = $kentekens->filter(function($value, $key) {
+            return strpos($value, 'B') === 0;
+        });
 
         return view('layouts.dashboard', compact('kentekens', 'kentekensVrachtwagen'));
     }
