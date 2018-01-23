@@ -47,7 +47,9 @@
 
 <div class="info-block">
     <h2>Aantal vrachtwagens vandaag gezien:</h2>
-    <h1>{{ $kentekensVrachtwagen->count() }}</h1>
+    <h1>{{ $kentekens->filter(function ($value, $key) {
+        return strpos($value, 'B') === 0;
+    }) }}</h1>
     <h2>Waarvan te lang geparkeerd:</h2>
     <h1>0</h1>
 </div>
