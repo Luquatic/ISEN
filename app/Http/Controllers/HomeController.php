@@ -16,9 +16,12 @@ class HomeController extends Controller
 
     public function create() {
         $kentekens = Kenteken::latest()
+            ->where('created_at', '>=', Carbon::today())
             ->get();
 
-        return view('layouts.dashboard', compact('kentekens'));
+        $kentekensVrachtwagen = $kentekens->where('kenteken', 'LIKE', 'B%');
+
+        return view('layouts.dashboard', compact('kentekens', 'kentekensVrachtwagen'));
     }
 
     public function getUser() {

@@ -47,14 +47,14 @@
 
 <div class="info-block">
     <h2>Aantal vrachtwagens vandaag gezien:</h2>
-    <h1>{{ $kentekens->where('created_at', '>=', Carbon::today())->where('kenteken', 'LIKE', '%'.'B'.'%')->count() }}</h1>
+    <h1>{{ $kentekensVrachtwagen->count() }}</h1>
     <h2>Waarvan te lang geparkeerd:</h2>
     <h1>0</h1>
 </div>
 <div class="info-block">
     <br>
     <h2>Totaal aantal kentekens vandaag gescanned:</h2>
-    <h1>{{ $kentekens->where('created_at', '>=', Carbon::today())->count() }}</h1>
+    <h1>{{ $kentekens->count() }}</h1>
     <h2>Auto's die langer als 2 uur in de straat zijn:</h2>
     <h1>0</h1>
 </div>
