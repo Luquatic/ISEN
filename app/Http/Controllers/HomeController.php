@@ -23,21 +23,12 @@ class HomeController extends Controller
             return $i->updated_at->gt($i->created_at->subHours(2));
         });
 
-        $vrachtwagenB = Kenteken::latest()
-            ->where('kenteken', 'like', 'B%')
+        $vrachtwagens = Kenteken::latest()
+            ->where('kenteken', 'like', 'B%' or 'V%')
             ->where('created_at', '>=', Carbon::today())
             ->get();
-        $vrachtwagenV = Kenteken::latest()
-            ->where('kenteken', 'like', 'V%')
-            ->where('created_at', '>=', Carbon::today())
-            ->get();
-        $listVrachtwagens = [$vrachtwagenB, $vrachtwagenV];
 
-        $teLangVrachtwagens = $listVrachtwagens->filter(function($i) {
-            return $i->updated_at->gt($i->created_at->subHours(2));
-        });
-
-        return view('layouts.dashboard', compact('kentekens', 'teLang', 'listVrachtwagens'));
+        return view('layouts.dashboard', compact('kentekens', 'teLang', 'vrachtwagens'));
     }
 
     public function getUser() {

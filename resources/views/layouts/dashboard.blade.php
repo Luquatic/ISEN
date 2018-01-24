@@ -47,7 +47,7 @@
 
 <div class="info-block">
     <h2>Aantal vrachtwagens vandaag gezien:</h2>
-    <h1>{{ $listVrachtwagens}}</h1>
+    <h1>{{ $vrachtwagens->count() }}</h1>
     <h2>Waarvan te lang geparkeerd:</h2>
     <h1>0</h1>
 </div>
