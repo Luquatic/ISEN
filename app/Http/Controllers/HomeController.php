@@ -31,7 +31,7 @@ class HomeController extends Controller
             ->where('kenteken', 'like', 'V%')
             ->where('created_at', '>=', Carbon::today())
             ->get();
-        $listVrachtwagens = $vrachtwagenB + $vrachtwagenV;
+        $listVrachtwagens = [$vrachtwagenB, $vrachtwagenV];
 
         $teLangVrachtwagens = $listVrachtwagens->filter(function($i) {
             return $i->updated_at->gt($i->created_at->subHours(2));
