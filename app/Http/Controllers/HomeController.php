@@ -29,7 +29,11 @@ class HomeController extends Controller
             ->where('created_at', '>=', Carbon::today())
             ->get();
 
-        return view('layouts.dashboard', compact('kentekens', 'teLang', 'vrachtwagens'));
+        $teLangVrachtwagens = $vrachtwagens->filter(function($i) {
+            return $i->updated_at->gt($i->created_at->subHours(2));
+        });
+
+        return view('layouts.dashboard', compact('kentekens', 'teLang', 'teLangVrachtwagens' ,'vrachtwagens'));
     }
 
     public function getUser() {
