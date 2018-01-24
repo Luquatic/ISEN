@@ -26,9 +26,16 @@ class HomeController extends Controller
         $vrachtwagenB = Kenteken::latest()
             ->where('kenteken', 'like', 'B%')
             ->where('created_at', '>=', Carbon::today())
-            ->get();
+            ->get()
+            ->count();
+        $vrachtwagenV = Kenteken::latest()
+            ->where('kenteken', 'like', 'V%')
+            ->where('created_at', '>=', Carbon::today())
+            ->get()
+            ->count();
+        $aantalVrachtwagens = $vrachtwagenB + $vrachtwagenV;
 
-        return view('layouts.dashboard', compact('kentekens', 'teLang', 'vrachtwagenB'));
+        return view('layouts.dashboard', compact('kentekens', 'teLang', 'aantalVrachtwagens'));
     }
 
     public function getUser() {
