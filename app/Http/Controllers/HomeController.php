@@ -23,7 +23,11 @@ class HomeController extends Controller
             return $i->updated_at->gt($i->created_at->subHours(2));
         });
 
-        return view('layouts.dashboard', compact('kentekens', 'teLang'));
+        $vrachtwagenB = $kentekens->filter(function ($value, $key) {
+            return starts_with($value, 'B');
+        });
+
+        return view('layouts.dashboard', compact('kentekens', 'teLang', 'vrachtwagenB'));
     }
 
     public function getUser() {
