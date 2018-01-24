@@ -19,11 +19,7 @@ class HomeController extends Controller
             ->where('created_at', '>=', Carbon::today())
             ->get();
 
-        $teLang = $kentekens->filter(function($i) {
-            return $i->updated_at->gt($i->created_at->subHours(2));
-        });
-
-        $teLang2 = Kenteken::latest()
+        $teLang = Kenteken::latest()
             ->whereRaw('`updated_at` > DATE_ADD(`created_at`, INTERVAL 2 HOUR)');
 
         $vrachtwagens = Kenteken::latest()
@@ -32,11 +28,10 @@ class HomeController extends Controller
             ->where('created_at', '>=', Carbon::today())
             ->get();
 
-        $teLangVrachtwagens = $vrachtwagens->filter(function($i) {
-            return $i->updated_at->gt($i->created_at->subHours(2));
-        });
+        $vrachtwagens
+            ->whereRaw('`updated_at` > DATE_ADD(`created_at`, INTERVAL 2 HOUR)');
 
-        return view('layouts.dashboard', compact('kentekens', 'teLang2', 'teLangVrachtwagens' ,'vrachtwagens'));
+        return view('layouts.dashboard', compact('kentekens', 'teLang', 'teLangVrachtwagens' ,'vrachtwagens'));
     }
 
     public function getUser() {
