@@ -32,13 +32,12 @@ class HomeController extends Controller
             ->where('created_at', '>=', Carbon::today())
             ->get();
         $listVrachtwagens = $vrachtwagenB + $vrachtwagenV;
-        $aantalVrachtwagens = $vrachtwagenB->count() + $vrachtwagenV->count();
 
         $teLangVrachtwagens = $listVrachtwagens->filter(function($i) {
             return $i->updated_at->gt($i->created_at->subHours(2));
         });
 
-        return view('layouts.dashboard', compact('kentekens', 'teLang', 'aantalVrachtwagens', 'teLangVrachtwagens'));
+        return view('layouts.dashboard', compact('kentekens', 'teLang', 'listVrachtwagens'));
     }
 
     public function getUser() {
