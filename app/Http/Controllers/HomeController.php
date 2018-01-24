@@ -20,7 +20,7 @@ class HomeController extends Controller
             ->get();
 
         $teLang = $kentekens->filter(function($i) {
-            return $i->updated_at->gt($i->created_at->subHours(2));
+            return $i->updated_at->lt($i->created_at->subHours(2));
         });
 
         $vrachtwagens = Kenteken::latest()
@@ -30,7 +30,7 @@ class HomeController extends Controller
             ->get();
 
         $teLangVrachtwagens = $vrachtwagens->filter(function($i) {
-            return $i->updated_at->gt($i->created_at->subHours(2));
+            return $i->updated_at->lt($i->created_at->subHours(2));
         });
 
         return view('layouts.dashboard', compact('kentekens', 'teLang', 'teLangVrachtwagens' ,'vrachtwagens'));
