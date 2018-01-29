@@ -17,7 +17,7 @@
     {{--<link href="/css/demo.css" rel="stylesheet" />--}}
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons" rel='stylesheet' type='text/css'>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}" />
@@ -226,19 +226,19 @@
                                         <ul class="nav nav-tabs" data-tabs="tabs">
                                             <li class="active">
                                                 <a href="#profile" data-toggle="tab">
-                                                    <i class="material-icons">bug_report</i> Bugs
+                                                    Code
                                                     <div class="ripple-container"></div>
                                                 </a>
                                             </li>
                                             <li class="">
                                                 <a href="#messages" data-toggle="tab">
-                                                    <i class="material-icons">code</i> Website
+                                                    Website
                                                     <div class="ripple-container"></div>
                                                 </a>
                                             </li>
                                             <li class="">
                                                 <a href="#settings" data-toggle="tab">
-                                                    <i class="material-icons">cloud</i> Server
+                                                    Database
                                                     <div class="ripple-container"></div>
                                                 </a>
                                             </li>
@@ -259,7 +259,7 @@
                                                         </label>
                                                     </div>
                                                 </td>
-                                                <td>Sign contract for "What are conference organizers afraid of?"</td>
+                                                <td>Data verzamelen in de kempenaerstraat</td>
                                                 <td class="td-actions text-right">
                                                     <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
                                                         <i class="material-icons">edit</i>
@@ -438,41 +438,31 @@
                     <div class="col-lg-6 col-md-12">
                         <div class="card">
                             <div class="card-header" data-background-color="orange">
-                                <h4 class="title">Employees Stats</h4>
-                                <p class="category">New employees on 15th September, 2016</p>
+                                <h4 class="title">Project leden</h4>
+                                <p class="category">Hogeschool Leiden, minor sensortechnologie</p>
                             </div>
                             <div class="card-content table-responsive">
                                 <table class="table table-hover">
                                     <thead class="text-warning">
                                     <th>ID</th>
-                                    <th>Name</th>
-                                    <th>Salary</th>
-                                    <th>Country</th>
+                                    <th>Naam</th>
+                                    <th>Email</th>
                                     </thead>
                                     <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>Dakota Rice</td>
-                                        <td>$36,738</td>
-                                        <td>Niger</td>
+                                        <td>Bram Valstar</td>
+                                        <td>s1092875@student.hsleiden.nl</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>Minerva Hooper</td>
-                                        <td>$23,789</td>
-                                        <td>Curaçao</td>
+                                        <td>Mathijs Uijtenbogaart</td>
+                                        <td>s1089187@student.hsleiden.nl</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>Sage Rodriguez</td>
-                                        <td>$56,142</td>
-                                        <td>Netherlands</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Philip Chaney</td>
-                                        <td>$38,735</td>
-                                        <td>Korea, South</td>
+                                        <td>Jessey Fransen</td>
+                                        <td>s1094286@student.hsleiden.nl</td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -528,16 +518,6 @@
 <!--  Google Maps Plugin    -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
 <!-- Material Dashboard javascript methods -->
-<script src="/js/material-dashboard.js?v=1.2.0"></script>
-{{--<!-- Material Dashboard DEMO methods, don't include it in your project! -->--}}
-{{--<script src="/js/demo.js"></script>--}}
-<script type="text/javascript">
-    $(document).ready(function() {
-
-        // Javascript method's body can be found in assets/js/demos.js
-        demo.initDashboardPageCharts();
-
-    });
-</script>
+<script src="/js/material-dashboard.js"></script>
 
 </html>

@@ -23,15 +23,15 @@ class HomeController extends Controller
             ->whereRaw('`updated_at` > DATE_ADD(`created_at`, INTERVAL 2 HOUR)');
 
         $vrachtwagens = Kenteken::latest()
+            ->where('created_at', '>=', Carbon::today())
             ->where('kenteken', 'like', 'B%')
             ->orWhere('kenteken', 'like', 'V%')
-            ->where('created_at', '>=', Carbon::today())
             ->get();
 
         $teLangVrachtwagens = Kenteken::latest()
+            ->where('created_at', '>=', Carbon::today())
             ->where('kenteken', 'like', 'B%')
             ->orWhere('kenteken', 'like', 'V%')
-            ->where('created_at', '>=', Carbon::today())
             ->whereRaw('`updated_at` > DATE_ADD(`created_at`, INTERVAL 2 HOUR)')
             ->count();
 
