@@ -27,42 +27,32 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         google.charts.load('current', {'packages':['bar']});
-        google.charts.setOnLoadCallback(drawStuff);
+        google.charts.setOnLoadCallback(drawChart);
 
-        function drawStuff() {
-            var data = new google.visualization.arrayToDataTable([
-                ['Dag', 'Vrachtwagen', 'Auto'],
-                ['Maandag', 4000, 20],
-                ['Dinsdag', 3000, 21],
-                ['Woensdag', 1000, 20],
-                ['Donderdag', 2000, 25],
-                ['Vrijdag', 1000, 20],
-                ['Zaterdag', 2000, 20],
-                ['Zondag', 0, 15]
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Dag', 'Vrachtwagens', 'Autos'],
+                ['Maandag', 1000, 400],
+                ['Dinsdag', 1170, 460],
+                ['Woensdag', 660, 1120],
+                ['Donderdag', 1030, 540],
+                ['Vrijdag', 660, 1120],
+                ['Zaterdag', 660, 1120],
+                ['Zondag', 660, 1120]
             ]);
 
             var options = {
-                width: 800,
                 chart: {
                     title: 'Verkeer Kempenaerstraat',
-                    subtitle: ''
+                    subtitle: '',
                 },
-                bars: 'vertical', // Required for Material Bar Charts.
-                series: {
-//                    0: { axis: 'Vrachtwagens' }, // Bind series 0 to an axis named 'vrachtwagen'.
-                    1: { axis: "Auto's" } // Bind series 1 to an axis named 'auto'.
-                },
-                axes: {
-                    x: {
-                        distance: {label: ''}, // Bottom x-axis.
-                        brightness: {side: 'top', label: 'apparent magnitude'} // Top x-axis.
-                    }
-                }
+                bars: 'vertical' // Required for Material Bar Charts.
             };
 
-            var chart = new google.charts.Bar(document.getElementById('dual_x_div'));
-            chart.draw(data, options);
-        };
+            var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+        }
     </script>
 </head>
 </head>
@@ -213,7 +203,7 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-content">
-                                <div id="dual_x_div" style="width: 900px; height: 500px;"></div>
+                                <div id="barchart_material" style="width: 900px; height: 500px;"></div>
                         </div>
                     </div>
                     {{--<div class="col-md-4">--}}
