@@ -37,7 +37,7 @@
             </a>
         </div>
         <div class="sidebar-wrapper">
-            <ul class="nav">
+            {{--<ul class="nav">--}}
                 {{--<li class="active">--}}
                     {{--<a href="">--}}
                         {{--<i class="material-icons">dashboard</i>--}}
@@ -80,7 +80,7 @@
                         {{--<p>Notifications</p>--}}
                     {{--</a>--}}
                 {{--</li>--}}
-            </ul>
+            {{--</ul>--}}
         </div>
     </div>
     <div class="main-panel">
@@ -107,7 +107,7 @@
                             </div>
                             <div class="card-content">
                                 <p class="category">Vandaag gezien</p>
-                                <h3 class="title">{{ $kentekens }}</h3>
+                                <h3 class="title">{{ $kentekens->count() }}</h3>
                             </div>
                             <div class="card-footer">
                                 <div class="stats">
@@ -123,7 +123,7 @@
                             </div>
                             <div class="card-content">
                                 <p class="category">Vandaag gezien</p>
-                                <h3 class="title">{{ $vrachtwagens }}</h3>
+                                <h3 class="title">{{ $vrachtwagens->count() }}</h3>
                             </div>
                             <div class="card-footer">
                                 <div class="stats">
@@ -139,7 +139,7 @@
                             </div>
                             <div class="card-content">
                                 <p class="category">Alle voertuigen</p>
-                                <h3 class="title">{{ $teLang }}</h3>
+                                <h3 class="title">{{ $teLang->count() }}</h3>
                             </div>
                             <div class="card-footer">
                                 <div class="stats">
