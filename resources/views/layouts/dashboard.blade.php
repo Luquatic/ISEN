@@ -210,9 +210,6 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <div class="card-header card-chart" data-background-color="green">
-                                <div class="ct-chart" id="dailySalesChart"></div>
-                            </div>
                             <div class="card-content">
                                 <div id="dual_x_div" style="width: 900px; height: 500px;"></div>
                         </div>
