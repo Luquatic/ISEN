@@ -128,7 +128,7 @@
                             </div>
                             <div class="card-content">
                                 <p class="category">Vandaag gezien</p>
-                                <h3 class="title">{{ $vrachtwagens->count() }}</h3>
+                                <h3 class="title">{{ $vrachtwagens->where('created_at', '>=', Carbon::today())->count() }}</h3>
                             </div>
                             <div class="card-footer">
                                 <div class="stats">
@@ -160,7 +160,7 @@
                             </div>
                             <div class="card-content">
                                 <p class="category">Alleen vrachtwagens</p>
-                                <h3 class="title">{{ $teLangVrachtwagens }}</h3>
+                                <h3 class="title">{{ $teLangVrachtwagens->where('created_at', '>=', Carbon::today())->count() }}</h3>
                             </div>
                             <div class="card-footer">
                                 <div class="stats">

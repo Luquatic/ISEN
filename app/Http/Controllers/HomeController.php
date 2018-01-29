@@ -26,15 +26,13 @@ class HomeController extends Controller
         $vrachtwagens = Kenteken::latest()
             ->where('kenteken', 'like', 'B%')
             ->orWhere('kenteken', 'like', 'V%')
-            ->where('created_at', '>=', Carbon::today())
             ->get();
 
         $teLangVrachtwagens = Kenteken::latest()
             ->where('kenteken', 'like', 'B%')
             ->orWhere('kenteken', 'like', 'V%')
             ->whereRaw('`updated_at` > DATE_ADD(`created_at`, INTERVAL 2 HOUR)')
-            ->where('created_at', '>=', Carbon::today())
-            ->count();
+            ->get();
 
         $inout = Inout::latest()
             ->where('created_at', '>=', Carbon::today())
