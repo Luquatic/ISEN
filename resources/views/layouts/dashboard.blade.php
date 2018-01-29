@@ -160,7 +160,7 @@
                             </div>
                             <div class="card-content">
                                 <p class="category">Alleen vrachtwagens</p>
-                                <h3 class="title">{{ $teLangVrachtwagens->where('created_at', '>=', Carbon::today())->whereRaw('`updated_at` > DATE_ADD(`created_at`, INTERVAL 2 HOUR)')->count() }}</h3>
+                                <h3 class="title">{{ $teLangVrachtwagens->where('created_at', '>=', Carbon::today())->count() }}</h3>
                             </div>
                             <div class="card-footer">
                                 <div class="stats">
