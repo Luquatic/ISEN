@@ -70,52 +70,7 @@
                 Project Kempenaer
             </a>
         </div>
-        <div class="sidebar-wrapper">
-            {{--<ul class="nav">--}}
-                {{--<li class="active">--}}
-                    {{--<a href="">--}}
-                        {{--<i class="material-icons">dashboard</i>--}}
-                        {{--<p>Dashboard</p>--}}
-                    {{--</a>--}}
-                {{--</li>--}}
-                {{--<li>--}}
-                    {{--<a href="">--}}
-                        {{--<i class="material-icons">person</i>--}}
-                        {{--<p>User Profile</p>--}}
-                    {{--</a>--}}
-                {{--</li>--}}
-                {{--<li>--}}
-                    {{--<a href="">--}}
-                        {{--<i class="material-icons">content_paste</i>--}}
-                        {{--<p>Table List</p>--}}
-                    {{--</a>--}}
-                {{--</li>--}}
-                {{--<li>--}}
-                    {{--<a href="">--}}
-                        {{--<i class="material-icons">library_books</i>--}}
-                        {{--<p>Typography</p>--}}
-                    {{--</a>--}}
-                {{--</li>--}}
-                {{--<li>--}}
-                    {{--<a href="">--}}
-                        {{--<i class="material-icons">bubble_chart</i>--}}
-                        {{--<p>Icons</p>--}}
-                    {{--</a>--}}
-                {{--</li>--}}
-                {{--<li>--}}
-                    {{--<a href="">--}}
-                        {{--<i class="material-icons">location_on</i>--}}
-                        {{--<p>Maps</p>--}}
-                    {{--</a>--}}
-                {{--</li>--}}
-                {{--<li>--}}
-                    {{--<a href="">--}}
-                        {{--<i class="material-icons text-gray">notifications</i>--}}
-                        {{--<p>Notifications</p>--}}
-                    {{--</a>--}}
-                {{--</li>--}}
-            {{--</ul>--}}
-        </div>
+        <div class="sidebar-wrapper"></div>
     </div>
     <div class="main-panel">
         <nav class="navbar navbar-transparent navbar-absolute">
@@ -134,6 +89,22 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-header" data-background-color="green">
+                                <i class="material-icons">Totale verkeer</i>
+                            </div>
+                            <div class="card-content">
+                                <p class="category">Vandaag gezien</p>
+                                <h3 class="title">{{ $inout->count() }}</h3>
+                            </div>
+                            <div class="card-footer">
+                                <div class="stats">
+                                    Laatste 24 uur
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card card-stats">
                             <div class="card-header" data-background-color="orange">

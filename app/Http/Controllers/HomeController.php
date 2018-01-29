@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Inout;
 use Illuminate\Http\Request;
 use Auth;
 use App\Kenteken;
@@ -35,7 +36,11 @@ class HomeController extends Controller
             ->whereRaw('date(created_at) = ?', [Carbon::today()])
             ->count();
 
-        return view('layouts.dashboard', compact('kentekens', 'teLang', 'teLangVrachtwagens' ,'vrachtwagens'));
+        $inout = Inout::latest()
+            ->whereRaw('date(created_at) = ?', [Carbon::today()])
+            ->get();
+
+        return view('layouts.dashboard', compact('kentekens', 'teLang', 'teLangVrachtwagens' ,'vrachtwagens', 'inout'));
     }
 
     public function getUser() {
