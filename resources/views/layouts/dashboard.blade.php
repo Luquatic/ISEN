@@ -4,15 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon.png" />
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="icon" type="image/png" href="/images/favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Material Dashboard by Creative Tim</title>
+    <title>Project Kempenaer</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
     <!-- Bootstrap core CSS     -->
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <!--  Material Dashboard CSS    -->
-    <link href="/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
+    <link href="/css/material-dashboard.css" rel="stylesheet" />
     {{--<!--  CSS for Demo Purpose, don't include it in your project     -->--}}
     {{--<link href="/css/demo.css" rel="stylesheet" />--}}
     <!--     Fonts and icons     -->
@@ -32,54 +32,54 @@
     Tip 2: you can also add an image using data-image tag
 -->
         <div class="logo">
-            <a href="http://www.creative-tim.com" class="simple-text">
-                Creative Tim
+            <a href="" class="simple-text">
+                Project Kempenaer
             </a>
         </div>
         <div class="sidebar-wrapper">
             <ul class="nav">
-                <li class="active">
-                    <a href="">
-                        <i class="material-icons">dashboard</i>
-                        <p>Dashboard</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="material-icons">person</i>
-                        <p>User Profile</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="material-icons">content_paste</i>
-                        <p>Table List</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="material-icons">library_books</i>
-                        <p>Typography</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="material-icons">bubble_chart</i>
-                        <p>Icons</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="material-icons">location_on</i>
-                        <p>Maps</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="material-icons text-gray">notifications</i>
-                        <p>Notifications</p>
-                    </a>
-                </li>
+                {{--<li class="active">--}}
+                    {{--<a href="">--}}
+                        {{--<i class="material-icons">dashboard</i>--}}
+                        {{--<p>Dashboard</p>--}}
+                    {{--</a>--}}
+                {{--</li>--}}
+                {{--<li>--}}
+                    {{--<a href="">--}}
+                        {{--<i class="material-icons">person</i>--}}
+                        {{--<p>User Profile</p>--}}
+                    {{--</a>--}}
+                {{--</li>--}}
+                {{--<li>--}}
+                    {{--<a href="">--}}
+                        {{--<i class="material-icons">content_paste</i>--}}
+                        {{--<p>Table List</p>--}}
+                    {{--</a>--}}
+                {{--</li>--}}
+                {{--<li>--}}
+                    {{--<a href="">--}}
+                        {{--<i class="material-icons">library_books</i>--}}
+                        {{--<p>Typography</p>--}}
+                    {{--</a>--}}
+                {{--</li>--}}
+                {{--<li>--}}
+                    {{--<a href="">--}}
+                        {{--<i class="material-icons">bubble_chart</i>--}}
+                        {{--<p>Icons</p>--}}
+                    {{--</a>--}}
+                {{--</li>--}}
+                {{--<li>--}}
+                    {{--<a href="">--}}
+                        {{--<i class="material-icons">location_on</i>--}}
+                        {{--<p>Maps</p>--}}
+                    {{--</a>--}}
+                {{--</li>--}}
+                {{--<li>--}}
+                    {{--<a href="">--}}
+                        {{--<i class="material-icons text-gray">notifications</i>--}}
+                        {{--<p>Notifications</p>--}}
+                    {{--</a>--}}
+                {{--</li>--}}
             </ul>
         </div>
     </div>
@@ -95,56 +95,6 @@
                     </button>
                     <a class="navbar-brand" href="#"> Material Dashboard </a>
                 </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="material-icons">dashboard</i>
-                                <p class="hidden-lg hidden-md">Dashboard</p>
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="material-icons">notifications</i>
-                                <span class="notification">5</span>
-                                <p class="hidden-lg hidden-md">Notifications</p>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="#">Mike John responded to your email</a>
-                                </li>
-                                <li>
-                                    <a href="#">You have 5 new tasks</a>
-                                </li>
-                                <li>
-                                    <a href="#">You're now friend with Andrew</a>
-                                </li>
-                                <li>
-                                    <a href="#">Another Notification</a>
-                                </li>
-                                <li>
-                                    <a href="#">Another One</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="material-icons">person</i>
-                                <p class="hidden-lg hidden-md">Profile</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <form class="navbar-form navbar-right" role="search">
-                        <div class="form-group  is-empty">
-                            <input type="text" class="form-control" placeholder="Search">
-                            <span class="material-input"></span>
-                        </div>
-                        <button type="submit" class="btn btn-white btn-round btn-just-icon">
-                            <i class="material-icons">search</i>
-                            <div class="ripple-container"></div>
-                        </button>
-                    </form>
-                </div>
             </div>
         </nav>
         <div class="content">
@@ -153,50 +103,15 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card card-stats">
                             <div class="card-header" data-background-color="orange">
-                                <i class="material-icons">content_copy</i>
+                                <i class="material-icons">Kentekens</i>
                             </div>
                             <div class="card-content">
-                                <p class="category">Used Space</p>
-                                <h3 class="title">49/50
-                                    <small>GB</small>
-                                </h3>
+                                <p class="category">Vandaag gezien</p>
+                                <h3 class="title">{{ $kentekens }}</h3>
                             </div>
                             <div class="card-footer">
                                 <div class="stats">
-                                    <i class="material-icons text-danger">warning</i>
-                                    <a href="#pablo">Get More Space...</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="card card-stats">
-                            <div class="card-header" data-background-color="green">
-                                <i class="material-icons">store</i>
-                            </div>
-                            <div class="card-content">
-                                <p class="category">Revenue</p>
-                                <h3 class="title">$34,245</h3>
-                            </div>
-                            <div class="card-footer">
-                                <div class="stats">
-                                    <i class="material-icons">date_range</i> Last 24 Hours
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="card card-stats">
-                            <div class="card-header" data-background-color="red">
-                                <i class="material-icons">info_outline</i>
-                            </div>
-                            <div class="card-content">
-                                <p class="category">Fixed Issues</p>
-                                <h3 class="title">75</h3>
-                            </div>
-                            <div class="card-footer">
-                                <div class="stats">
-                                    <i class="material-icons">local_offer</i> Tracked from Github
+                                    Laatste 24 uur
                                 </div>
                             </div>
                         </div>
@@ -204,15 +119,47 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card card-stats">
                             <div class="card-header" data-background-color="blue">
-                                <i class="fa fa-twitter"></i>
+                                <i class="material-icons">Vrachtwagens</i>
                             </div>
                             <div class="card-content">
-                                <p class="category">Followers</p>
-                                <h3 class="title">+245</h3>
+                                <p class="category">Vandaag gezien</p>
+                                <h3 class="title">{{ $vrachtwagens }}</h3>
                             </div>
                             <div class="card-footer">
                                 <div class="stats">
-                                    <i class="material-icons">update</i> Just Updated
+                                    Laatste 24 uur
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-header" data-background-color="red">
+                                <i class="material-icons">Langer als 2 uur</i>
+                            </div>
+                            <div class="card-content">
+                                <p class="category">Alle voertuigen</p>
+                                <h3 class="title">{{ $teLang }}</h3>
+                            </div>
+                            <div class="card-footer">
+                                <div class="stats">
+                                    Laatste 24 uur
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card card-stats">
+                            <div class="card-header" data-background-color="red">
+                                <i class="material-icons">Langer als 2 uur</i>
+                            </div>
+                            <div class="card-content">
+                                <p class="category">Alleen vrachtwagens</p>
+                                <h3 class="title">{{ $teLangVrachtwagens }}</h3>
+                            </div>
+                            <div class="card-footer">
+                                <div class="stats">
+                                    Laatste 24 uur
                                 </div>
                             </div>
                         </div>
@@ -561,13 +508,6 @@
                         </li>
                     </ul>
                 </nav>
-                <p class="copyright pull-right">
-                    &copy;
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>
-                    <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
-                </p>
             </div>
         </footer>
     </div>
