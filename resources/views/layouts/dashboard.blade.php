@@ -123,7 +123,7 @@
                             </div>
                             <div class="card-content">
                                 <p class="category">Vandaag gezien</p>
-                                <h3 class="title">{{ $vrachtwagens->count() }}</h3>
+                                <h3 class="title">{{ $vrachtwagens->whereRaw('date(created_at) = ?', [Carbon::today()])->count() }}</h3>
                             </div>
                             <div class="card-footer">
                                 <div class="stats">
