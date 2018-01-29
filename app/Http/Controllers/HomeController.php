@@ -15,21 +15,23 @@ class HomeController extends Controller
     }
 
     public function create() {
+        $today = Carbon::now()->toDateString();
+
         $kentekens = Kenteken::latest()
-            ->where('created_at', '>=', Carbon::today())
+            ->whereRaw('DATE(created_at) = ?', [$today])
             ->get();
 
         $teLang = Kenteken::latest()
             ->whereRaw('`updated_at` > DATE_ADD(`created_at`, INTERVAL 2 HOUR)');
 
         $vrachtwagens = Kenteken::latest()
-            ->where('created_at', '>=', Carbon::today())
-//            ->where('kenteken', 'like', 'B%')
-//            ->orWhere('kenteken', 'like', 'V%')
+            ->whereRaw('DATE(created_at) = ?', [$today])
+            ->where('kenteken', 'like', 'B%')
+            ->orWhere('kenteken', 'like', 'V%')
             ->get();
 
         $teLangVrachtwagens = Kenteken::latest()
-            ->where('created_at', '>=', Carbon::today())
+            ->whereRaw('DATE(created_at) = ?', [$today])
             ->where('kenteken', 'like', 'B%')
             ->orWhere('kenteken', 'like', 'V%')
             ->whereRaw('`updated_at` > DATE_ADD(`created_at`, INTERVAL 2 HOUR)')
