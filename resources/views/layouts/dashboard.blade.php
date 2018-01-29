@@ -32,13 +32,13 @@
         function drawChart() {
             var data = google.visualization.arrayToDataTable([
                 ['Dag', 'Vrachtwagens', 'Autos'],
-                ['Maandag', 1000, 400],
-                ['Dinsdag', 1170, 460],
-                ['Woensdag', 660, 1120],
-                ['Donderdag', 1030, 540],
-                ['Vrijdag', 660, 1120],
-                ['Zaterdag', 660, 1120],
-                ['Zondag', 660, 1120]
+                ['Maandag', 3, 20],
+                ['Dinsdag', 2, 26],
+                ['Woensdag', 2, 35],
+                ['Donderdag', 3, 20],
+                ['Vrijdag', 0, 30],
+                ['Zaterdag', 2, 60],
+                ['Zondag', 0, 10]
             ]);
 
             var options = {
