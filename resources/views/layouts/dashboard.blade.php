@@ -32,12 +32,12 @@
         function drawStuff() {
             var data = new google.visualization.arrayToDataTable([
                 ['Dag', 'Vrachtwagen', 'Auto'],
-                ['Maandag', 8000, 20],
-                ['Dinsdag', 9000, 21],
-                ['Woensdag', 8000, 20],
-                ['Donderdag', 10000, 25],
-                ['Vrijdag', 7000, 20],
-                ['Zaterdag', 6000, 20],
+                ['Maandag', 4000, 20],
+                ['Dinsdag', 3000, 21],
+                ['Woensdag', 1000, 20],
+                ['Donderdag', 2000, 25],
+                ['Vrijdag', 1000, 20],
+                ['Zaterdag', 2000, 20],
                 ['Zondag', 0, 15]
             ]);
 
