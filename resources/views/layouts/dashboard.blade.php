@@ -49,8 +49,8 @@
                 },
                 bars: 'vertical', // Required for Material Bar Charts.
                 series: {
-                    0: { axis: 'Vrachtwagens' }, // Bind series 0 to an axis named 'distance'.
-                    1: { axis: "Auto's" } // Bind series 1 to an axis named 'brightness'.
+//                    0: { axis: 'Vrachtwagens' }, // Bind series 0 to an axis named 'vrachtwagen'.
+                    1: { axis: "Auto's" } // Bind series 1 to an axis named 'auto'.
                 },
                 axes: {
                     x: {
