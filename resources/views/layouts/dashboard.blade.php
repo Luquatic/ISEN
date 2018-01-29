@@ -96,7 +96,7 @@
                             </div>
                             <div class="card-content">
                                 <p class="category">Totaal</p>
-                                <h3 class="title">{{ $inout->count() }}</h3>
+                                <h3 class="title">{{ $inout->count() / 2}}</h3>
                             </div>
                             <div class="card-footer">
                                 <div class="stats">
@@ -140,7 +140,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card card-stats">
                             <div class="card-header" data-background-color="red">
-                                <i class="material-icons">Langer als 2 uur</i>
+                                <i class="material-icons">Langer dan 2 uur</i>
                             </div>
                             <div class="card-content">
                                 <p class="category">Alle voertuigen</p>
@@ -156,7 +156,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="card card-stats">
                             <div class="card-header" data-background-color="red">
-                                <i class="material-icons">Langer als 2 uur</i>
+                                <i class="material-icons">Langer dan 2 uur</i>
                             </div>
                             <div class="card-content">
                                 <p class="category">Alleen vrachtwagens</p>
