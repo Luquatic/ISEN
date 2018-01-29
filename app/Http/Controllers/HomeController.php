@@ -25,7 +25,7 @@ class HomeController extends Controller
         $vrachtwagens = Kenteken::latest()
             ->where('kenteken', 'like', 'B%')
             ->orWhere('kenteken', 'like', 'V%')
-//            ->whereRaw('date(created_at) = ?', [Carbon::today()])
+            ->whereRaw('date(created_at) = ?', [Carbon::today()])
             ->get();
 
         $teLangVrachtwagens = Kenteken::latest()
