@@ -35,7 +35,6 @@ class HomeController extends Controller
             ->get();
 
         $inout = Inout::latest()
-            ->where('created_at', '>=', Carbon::today())
             ->get();
 
         return view('layouts.dashboard', compact('kentekens', 'teLang', 'teLangVrachtwagens' ,'vrachtwagens', 'inout'));

@@ -95,12 +95,12 @@
                                 <i class="material-icons">Totale verkeer</i>
                             </div>
                             <div class="card-content">
-                                <p class="category">Vandaag gezien</p>
+                                <p class="category">Totaal</p>
                                 <h3 class="title">{{ $inout->count() }}</h3>
                             </div>
                             <div class="card-footer">
                                 <div class="stats">
-                                    Laatste 24 uur
+                                    Laatste 7 dagen
                                 </div>
                             </div>
                         </div>
@@ -111,7 +111,7 @@
                                 <i class="material-icons">Kentekens</i>
                             </div>
                             <div class="card-content">
-                                <p class="category">Vandaag gezien</p>
+                                <p class="category">Totaal</p>
                                 <h3 class="title">{{ $kentekens->count() }}</h3>
                             </div>
                             <div class="card-footer">
@@ -127,7 +127,7 @@
                                 <i class="material-icons">Vrachtwagens</i>
                             </div>
                             <div class="card-content">
-                                <p class="category">Vandaag gezien</p>
+                                <p class="category">Totaal</p>
                                 <h3 class="title">{{ $vrachtwagens->where('created_at', '>=', Carbon::today())->count() }}</h3>
                             </div>
                             <div class="card-footer">
