@@ -31,7 +31,6 @@ class HomeController extends Controller
         $teLangVrachtwagens = Kenteken::latest()
             ->where('kenteken', 'like', 'B%')
             ->orWhere('kenteken', 'like', 'V%')
-            ->whereRaw('`updated_at` > DATE_ADD(`created_at`, INTERVAL 2 HOUR)')
             ->get();
 
         $inout = Inout::latest()
