@@ -31,28 +31,30 @@
 
         function drawStuff() {
             var data = new google.visualization.arrayToDataTable([
-                ['Galaxy', 'Distance', 'Brightness'],
-                ['Canis Major Dwarf', 8000, 23.3],
-                ['Sagittarius Dwarf', 24000, 4.5],
-                ['Ursa Major II Dwarf', 30000, 14.3],
-                ['Lg. Magellanic Cloud', 50000, 0.9],
-                ['Bootes I', 60000, 13.1]
+                ['Dag', 'Vrachtwagen', 'Auto'],
+                ['Maandag', 8000, 20],
+                ['Dinsdag', 9000, 21],
+                ['Woensdag', 8000, 20],
+                ['Donderdag', 10000, 25],
+                ['Vrijdag', 7000, 20],
+                ['Zaterdag', 6000, 20],
+                ['Zondag', 0, 15]
             ]);
 
             var options = {
                 width: 800,
                 chart: {
-                    title: 'Nearby galaxies',
-                    subtitle: 'distance on the left, brightness on the right'
+                    title: 'Verkeer Kempenaerstraat',
+                    subtitle: ''
                 },
-                bars: 'horizontal', // Required for Material Bar Charts.
+                bars: 'vertical', // Required for Material Bar Charts.
                 series: {
-                    0: { axis: 'distance' }, // Bind series 0 to an axis named 'distance'.
-                    1: { axis: 'brightness' } // Bind series 1 to an axis named 'brightness'.
+                    0: { axis: 'Vrachtwagens' }, // Bind series 0 to an axis named 'distance'.
+                    1: { axis: "Auto's" } // Bind series 1 to an axis named 'brightness'.
                 },
                 axes: {
                     x: {
-                        distance: {label: 'parsecs'}, // Bottom x-axis.
+                        distance: {label: ''}, // Bottom x-axis.
                         brightness: {side: 'top', label: 'apparent magnitude'} // Top x-axis.
                     }
                 }
